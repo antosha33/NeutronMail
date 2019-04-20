@@ -5,7 +5,7 @@ body {
 }
 
 .header{
-  background-image: url(./assets/background.jpg);
+  background-image: url(./assets/img/background.jpg);
   background-repeat: no-repeat;
   background-position: center 15px;
   margin: auto;
@@ -198,7 +198,7 @@ ul{
 .log-in::before{
   content: '';
   position: absolute;
-  background-image: url(./assets/log_in_before.jpg);
+  background-image: url(./assets/img/log_in_before.jpg);
   height: 15px;
   width: 15px;
   top: 12px;
@@ -313,7 +313,7 @@ ul{
   left: -110px;
   width: 602px;
   height: 57px;
-  background-image: url("./assets/button_bg.png");
+  background-image: url("./assets/img/button_bg.png");
   z-index: 1;
 }
 .wrap-button-block{
@@ -515,42 +515,42 @@ ul{
   left: 35px;
 }
 .brands .brand_name:nth-child(1){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 128px;
   height: 40px;
   background-position: 0 0;
   
 }
 .brands .brand_name:nth-child(2){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 128px;
   height: 40px;
   background-position: -160px 0;
   margin-left: 33px;
 }
 .brands .brand_name:nth-child(3){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 128px;
   height: 40px;
   background-position: -325px 0;
   margin-left: 37px;
 }
 .brands .brand_name:nth-child(4){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 128px;
   height: 40px;
   background-position: -500px 0;
   margin-left: 47px;
 }
 .brands .brand_name:nth-child(5){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 155px;
   height: 40px;
   background-position: -640px 0;
   margin-left: 12px;
 }
 .brands .brand_name:nth-child(6){
-  background-image: url(./assets/brands.jpg);
+  background-image: url(./assets/img/brands.jpg);
   width: 60px;
   height: 45px;
   background-position: -848px 0;
@@ -631,7 +631,7 @@ ul{
 }
 .about-text::after{
   content:"";
-  background-image: url("./assets/pc_bg.png");
+  background-image: url("./assets/img/pc_bg.png");
   width: 578px;
   height: 670px;
   position: absolute;
@@ -707,11 +707,11 @@ ul{
   line-height: 22px;
 }
 .app-store_button{
-  background-image: url('./assets/apple_download.jpg');
+  background-image: url('./assets/img/apple_download.jpg');
   background-position: center;
 }
 .google-play_button{
-  background-image: url('./assets/google_download.jpg');
+  background-image: url('./assets/img/google_download.jpg');
   background-position: center;
 }
 
@@ -847,14 +847,14 @@ margin: 0;
 .technology:nth-child(1){
   width: 85px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: 9px 0;
   background-repeat: no-repeat;
 }
 .technology:nth-child(2){
   width: 82px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -126px 0;
   background-repeat: no-repeat;
   margin-left: 50px;
@@ -862,7 +862,7 @@ margin: 0;
 .technology:nth-child(3){
   width: 120px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -254px 0;
   background-repeat: no-repeat;
   margin-left: 46px;
@@ -870,7 +870,7 @@ margin: 0;
 .technology:nth-child(4){
   width: 120px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -390px 0;
   background-repeat: no-repeat;
   margin-left: 16px;
@@ -878,7 +878,7 @@ margin: 0;
 .technology:nth-child(5){
   width: 80px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -560px 0;
   background-repeat: no-repeat;
   margin-left: 50px;
@@ -886,7 +886,7 @@ margin: 0;
 .technology:nth-child(6){
   width: 140px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -652px 0;
   background-repeat: no-repeat;
   margin-left: 12px;
@@ -894,7 +894,7 @@ margin: 0;
 .technology:nth-child(7){
   width:46px;
   height: 50px;
-  background-image: url("./assets/technologies.png");
+  background-image: url("./assets/img/technologies.png");
   background-position: -843px 0;
   background-repeat: no-repeat;
   margin-left: 51px;
@@ -1109,6 +1109,9 @@ margin: 0;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color:#582c7e;
+}
+.about-txt{
+  width: 360px;
 }
 .log-in span:hover{
   color:#582c7e;
