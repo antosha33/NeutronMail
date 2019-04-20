@@ -33,6 +33,11 @@ body {
   font-weight: bold;
 }
 
+@font-face{
+  font-family: 'malaga';
+  src: url('./assets/fonts/MalagaOT-RegItalic.otf') format('opentype');
+}
+
 .grid{
   display: grid;
   grid-template-columns: 1430px;
@@ -480,7 +485,7 @@ ul{
   position: relative;
 }
 .brands{
-  position: absolute;
+  position: relative;
   height: 40px;
   width: 940px;
   display: -webkit-box;
@@ -532,9 +537,169 @@ ul{
   background-position: -848px 0;
   margin-left: 52px;
 }
+.about-text ul{
+  font-family: "malaga";
+  font-size: 23px;
+  letter-spacing: 0.7px;
+  color: #101010;
+}
+.about-text ul li span{
+  font-family: "malaga";
+  font-size: 15px;
+  letter-spacing: 0.7px;
+}
+.about-text li{
+  margin-bottom: 6px;
+  position: relative;
+}
+.li_round::before{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -40px;
+  width: 13px;
+  height: 13px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #101010;
+}
+.li_round_grey::before{
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -39px;
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #b7b7b7;
+}
+.li_round_grey_second::before{
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -39px;
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #b7b7b7;
+}
+.about-text{
+  width: 565px;
+  margin-left: 404px;
+  margin-top: 126px;
+}
+.section{
+  z-index: 0;
+  position: relative;
+  
+}
+.application{
+  background-color: #f5f5f5;
+  margin-top: -99px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 69%, 100% 7%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 69%, 100% 7%, 100% 100%, 0% 100%);
+  z-index: 0;
+  display: grid;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  position: relative;
+  height: 327px;
+}
+.about-text::after{
+  content:"";
+  background-image: url("./assets/pc_bg.png");
+  width: 578px;
+  height: 670px;
+  position: absolute;
+  right: 270px;
+  top: 146px;
+  overflow: visible;
+  z-index: 1;
+}
 
 
+.download-box {
+  position: relative;
+  /* padding-top: 182px; */
+  width: 450px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right:32px;
+  z-index: 6;
+  margin-top: -145px;
 
+}
+.download-box h4{
+  font-family: 'titillium-neutron';
+  font-size: 36px;
+  color: #535353;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+.buttons-box{
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14px;
+  padding-left: 41px;
+  z-index: 6;
+  background-color: #f5f5f5;
+}
+.section:after{
+  content:"";
+  width: 1400px;
+  height: 1px;
+  position: absolute;
+  background-color:#b9b9b9;
+  bottom: -169px;
+  right: 0px;
+}
+.buttons-box button{
+  width: 180px;
+  height: 55px;
+  background-color: #050708;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: none;
+  z-index: 5;
+}
+.buttons-box button:nth-child(1){
+  margin-right: 13px;
+}
+.download-box p{
+  font-family: 'titillium-neutron';
+  font-size: 16px;
+  color: #959393;
+  margin-top: 8px;
+  letter-spacing: 0.2px;
+  padding-right: 2px;
+  line-height: 22px;
+}
+.app-store_button{
+  background-image: url('./assets/apple_download.jpg');
+  background-position: center;
+}
+.google-play_button{
+  background-image: url('./assets/google_download.jpg');
+  background-position: center;
+}
+@media (max-width: 1800px) {
+  .about-text::after{
+    opacity: 0.2;
+  }
+}
 @media (max-width: 1400px) {
   .opportunites{
     display: grid;
@@ -606,6 +771,12 @@ ul{
 }
 
 @media (max-width: 992px) {
+  .about-text{
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+
+  }
   .top_navbar{
     grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
   } 
@@ -666,6 +837,33 @@ ul{
 
 }
 @media (max-width: 768px) {
+  .download-box{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-right: 0;
+    width: auto;
+  }
+  .buttons-box{
+    display: grid;
+    grid-gap: 15px;
+  }
+  .about-text{
+    width: auto;
+  }
+
+  .about-text ul{
+    font-size: 18px;
+  }
+  .li_round::before{
+    left: 10px;
+  }
+  .li_round_grey::before{
+    left: 10px;
+  }
+  .li_round_grey_second::before{
+    left: 10px;
+  }
   .opportunites{
     grid-gap:0px;
 
@@ -700,6 +898,24 @@ ul{
   }
 }
 @media (max-width: 480px) {
+  .about-text{
+    margin-top: 60px;
+  }
+  .brands{
+    display: none;
+  }
+  .download-box h4{
+    font-size: 24px;
+  }
+  .li_round::before{
+    display: none;
+  }
+  .li_round_grey::before{
+    display: none;
+  }
+  .li_round_grey_second::before{
+    display: none;
+  }
   .brands{
     top: 20px;
   }
