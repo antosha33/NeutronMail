@@ -163,6 +163,12 @@ ul{
   -webkit-border-radius: 20px;
           border-radius: 20px;
   text-align: center;
+  -webkit-box-shadow: 0px 10px 15px #6278ce;
+          box-shadow: 0px 10px 15px #6278ce;
+}
+.button-block button{
+  -webkit-box-shadow: 0 0 10px #5c3181;
+          box-shadow: 0 0 10px #5c3181;
 }
 .sign-up span{
   display: block;
@@ -171,6 +177,14 @@ ul{
           align-self: center;
   color: #fff;
   margin-top: -5px;
+}
+.upgraid{
+  -webkit-box-shadow: 0px 5px 15px #5c3181;
+          box-shadow: 0px 5px 15px #5c3181;
+}
+.donate{
+  -webkit-box-shadow: 0px 5px 15px #35bbe0;
+          box-shadow: 0px 5px 15px #35bbe0;
 }
 .log-in{
   display: grid;
@@ -1089,12 +1103,12 @@ margin: 0;
 }
 .nav ul li:hover{
   cursor: pointer;
-  font-size: 18px;
+  font-weight: 800;
   margin-top: 5px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color:#582c7e;
 }
 .log-in span:hover{
   color:#582c7e;
@@ -1178,6 +1192,24 @@ button,
 button:active, 
 button:focus {
     outline: none;
+}
+.languages li{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.nav li{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.footer_social > *{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .upgraid:hover{
   background-image: -webkit-linear-gradient(80deg, #fff, #fff);
