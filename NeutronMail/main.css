@@ -1640,6 +1640,9 @@ button:focus {
 
 }
 @media (max-width: 480px) {
+  .about-txt{
+    min-width: auto;
+  }
   .right_map_side{
     display: grid;
   }
