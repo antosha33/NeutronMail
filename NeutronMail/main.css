@@ -1111,7 +1111,7 @@ margin: 0;
   color:#582c7e;
 }
 .about-txt{
-  width: 360px;
+  min-width: 360px;
 }
 .log-in span:hover{
   color:#582c7e;
